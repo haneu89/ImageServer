@@ -45,7 +45,7 @@ id 값에 해당하는 이미지 출력
 ├── util/
 |   ├── base62.py
 |   └── db.py
-├── upload/
+├── upload/ (자동생성)
 |   └── YYYY/
 |	   └── mm/
 |	      └── dd/
