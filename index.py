@@ -6,7 +6,6 @@ import time
 import random
 from util.base62 import encode
 import util.db as db
-import test
 
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
@@ -17,7 +16,7 @@ ranNum = lambda: random.randrange(100, 999)
 
 app = Flask(__name__)
 
-# db.init()
+db.init()
 
 def savePath():
   UPLOAD_FOLDER = 'upload/' + datetime.datetime.today().strftime('%Y/%m/%d')
@@ -26,7 +25,7 @@ def savePath():
 
 @app.route('/', methods=['GET'])
 def main():
-  print(db.all())
+  # print(db.all())
   return render_template('home.html')
 
 @app.route('/<id>', methods=['GET'])
@@ -65,5 +64,5 @@ def upload():
 
 if __name__ == '__main__':
   # app.debug = True
-  # app.run(host='0.0.0.0')
+  app.run(host='0.0.0.0', port=80)
   app.run()
