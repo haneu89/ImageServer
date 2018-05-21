@@ -47,8 +47,8 @@ id 값에 해당하는 이미지 출력
 |   └── db.py
 ├── upload/
 |   └── YYYY/
-|		└── mm/
-|			└── dd/
+|	   └── mm/
+|	      └── dd/
 └── templates/
     └── home.html
 ```
