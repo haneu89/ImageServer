@@ -71,4 +71,5 @@ id 값에 해당하는 이미지 출력
 + HTTPS Support
 + Crop
 + Convert (JPEG, GIF (animated), PNG , BMP, TIFF, ...)
++ Docker image
 
