@@ -12,6 +12,6 @@ app.register_blueprint(file_api)
 db.init()
 
 if __name__ == '__main__':
-  app.debug = True
-  # app.run(host='0.0.0.0', port=80)
+  # app.debug = True
+  app.run(host='0.0.0.0', port=80)
   app.run()
